@@ -1,0 +1,232 @@
+    <!doctype html>
+    <html lang="km">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>ទំព័រដើម — ព័ត៌មានអំពីខ្ញុំ</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+      <style>
+        :root{
+          --bg:#0f1724;
+          --card:#0b1220;
+          --accent:linear-gradient(90deg,#6ee7b7,#3b82f6);
+          --text:#e6eef8;
+          --muted:#9fb3d1;
+          --glass: rgba(255,255,255,0.03);
+          font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        }
+        *{box-sizing:border-box}
+        body{margin:0;min-height:100vh;background:radial-gradient(1000px 600px at 10% 10%, rgba(59,130,246,0.12), transparent), var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+        .container{max-width:1000px;margin:40px auto;padding:24px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:16px;padding:28px;display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:center;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+        .avatar{width:140px;height:140px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.06);background:linear-gradient(135deg,#0ea5a4,#2563eb);display:flex;align-items:center;justify-content:center}
+        .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+        h1{margin:0;font-size:24px}
+        .role{margin-top:6px;color:var(--muted);font-weight:600}
+        .desc{margin-top:12px;color:var(--muted);line-height:1.6}
+        .cta{margin-top:18px;display:flex;gap:12px}
+        .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+        .btn-primary{background:var(--accent);color:#082032;box-shadow:0 6px 18px rgba(59,130,246,0.18)}
+        .btn-outline{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.06)}
+        .meta{margin-top:12px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+        .socials{display:flex;gap:10px}
+        .socials a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:8px;background:var(--glass);color:var(--text);text-decoration:none}
+
+        /* Small screens */
+        @media (max-width:720px){
+          .card{grid-template-columns:1fr;text-align:center}
+          .avatar{margin:0 auto}
+          .cta{justify-content:center}
+          .meta{justify-content:center}
+        }
+
+        /* tiny helper */
+        .skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+        .skill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+      </style>
+    </head>
+    <body>
+      <main class="container">
+        <section class="card" aria-labelledby="intro-title">
+          <div class="avatar" aria-hidden="true">
+            <!-- ជំនួស URL ខាងក្រោមដោយរូបអ្នក -->
+            <img src="Image/DSC_8068.JPG" alt="រូប​ភាព​របស់​ខ្ញុំ">
+          </div>
+
+          <div>
+            <h1 id="intro-title">សួស្តី — ខ្ញុំឈ្មោះ [ភាគ ផល្លា]</h1>
+            <div class="role">Web Developer • IT Support • Student</div>
+
+            <p class="desc">ខ្ញុំជាអ្នកដែលមានចំណាប់អារម្មណ៍ចំពោះការបង្កើតវេបសាយ និងដោះស្រាយបញ្ហាបច្ចេកទេស។ ខ្ញុំផ្តោតលើ HTML, CSS, JavaScript, និង Python/Django។ ខ្ញុំចូលចិត្តសាកល្បងគម្រោងថ្មីៗ និងរៀនបច្ចេកវិទ្យាថ្មីៗ។</p>
+
+            <div class="skills" aria-hidden="true">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Django</div>
+              <div class="skill">Networking</div>
+            </div>
+
+            <div class="cta">
+              <a class="btn btn-primary" href="mailto:phalla1914@gmail.com?subject=Contact%20from%20Website">ទាក់ទងខ្ញុំ</a>
+              <a class="btn btn-outline" href="#projects">មើលគម្រោង</a>
+              <a class="btn btn-outline" href="/resume.pdf" download>ទាញយក CV</a>
+            </div>
+
+            <div class="meta">
+              <div>📍 Phnom Penh, Cambodia</div>
+              <div>✉️ phalla1914@gmail.com</div>
+              <div class="socials">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/YourFacebookUsername" title="Facebook" aria-label="Facebook">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.588l-.467 3.622h-3.121V24h6.116C23.407 24 24 23.407 24 22.675V1.325C24 .593 23.407 0 22.675 0z"/>
+                  </svg>
+                </a>
+
+                <!-- Telegram -->
+                <a href="https://t.me/YourTelegramUsername" title="Telegram" aria-label="Telegram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12c0-6.627-5.373-12-12-12zm5.48 8.63l-1.518 7.168c-.115.51-.414.635-.841.396l-2.324-1.714-1.121 1.08c-.124.124-.228.228-.467.228l.167-2.37 4.314-3.893c.187-.167-.041-.26-.292-.093l-5.33 3.354-2.296-.718c-.5-.156-.51-.5.104-.74l8.983-3.462c.417-.156.782.104.652.741z"/>
+                  </svg>
+                </a>
+
+                <!-- Gmail -->
+                <a href="mailto:phalla1914@gmail.com" title="Gmail" aria-label="Gmail">
+                  <svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M502.3 190.8c3.9-3.2 9.7-.7 9.7 4.6v186c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.4c0-5.3 5.8-7.8 9.7-4.6l226.3 186c12.6 10.3 30.5 10.3 43.1 0l226.2-186zM256 272L48 96h416L256 272z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quick tips (not visible on printed page) -->
+        <p style="color:var(--muted);margin-top:18px;font-size:13px">កែឈ្មោះ [ឈ្មោះរបស់អ្នក], រូប/អ៊ីមែល និងតំណភ្ជាប់ GitHub/LinkedIn ដើម្បីឲ្យទំព័រចេញលេចឡើង។</p>
+      </main>
+
+    <!-- The rest of your About / Projects / Experience / Contact sections remain unchanged -->
+
+
+    <!-- About Me Section -->
+    <section id="about" class="container" style="margin-top:50px">
+      <h2>About Me</h2>
+      <p>ខ្ញុំជាមនុស្សដែលស្រឡាញ់បច្ចេកវិទ្យា ស្រាវជ្រាវរៀនអំពីវេបសាយ Software និង Network។ ខ្ញុំមានចំណង់ចំណូលចិត្តក្នុងការអភិវឌ្ឍគម្រោងថ្មី និងការលើកទឹកចិត្តខ្លួនឯងឲ្យធ្វើអ្វីថ្មីៗជានិច្ច។</p>
+
+      <h3>អ្វីដែលខ្ញុំចូលចិត្ត</h3>
+      <ul>
+        <li>កូដកម្មវិធី</li>
+        <li>Networking Lab</li>
+        <li>Design UI/UX</li>
+        <li>បង្កើតគម្រោងថ្មីៗ</li>
+      </ul>
+
+      <h3>Education</h3>
+      <ul>
+        <li>IT Student — Phnom Penh</li>
+      </ul>
+
+      <h3>Technical Skills</h3>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">Django</div>
+        <div class="skill">Networking</div>
+      </div>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Communication</li>
+        <li>Teamwork</li>
+        <li>Problem-Solving</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container" style="margin-top:50px">
+      <h2>Projects</h2>
+
+      <div class="card" style="margin-top:20px;grid-template-columns:1fr 2fr;">
+        <div><img src="Image/project1.jpg" alt="Project Screenshot" style="width:100%;border-radius:10px"></div>
+        <div>
+          <h3>Student Management System</h3>
+          <p>គម្រោងគ្រប់គ្រងទិន្នន័យសិស្ស ប្រើ C# និង SQL Server ដែលអនុញ្ញាតឲ្យបញ្ចូល ពិនិត្យ កែប្រែ និងស្វែងរកទិន្នន័យ។</p>
+          <p><strong>Tools:</strong> C#, .NET, SQL Server</p>
+          <a class="btn btn-outline" href="#">GitHub Link</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px;grid-template-columns:1fr 2fr;">
+        <div><img src="Image/project2.jpg" alt="Project Screenshot" style="width:100%;border-radius:10px"></div>
+        <div>
+          <h3>Personal Blog (Django)</h3>
+          <p>វេបសាយ Blog មាន Post list, Detail View, Admin Panel និង Comment System។</p>
+          <p><strong>Tools:</strong> Python, Django, SQLite</p>
+          <a class="btn btn-outline" href="#">GitHub Link</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container" style="margin-top:50px">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>2025 — Internship IT Support</strong> — Fixing PC issues, installing OS, network setup</li>
+        <li><strong>Freelance Web Developer</strong> — Building small business websites</li>
+      </ul>
+    </section>
+
+<!-- Contact Section -->
+<section id="contact" class="container" style="margin-top:50px">
+  <h2>Contact</h2>
+  <p>📞 Phone: 0964294915</p>
+  <p>📧 Email: phalla1914@gmail.com</p>
+  <p>Facebook / Telegram / LinkedIn</p>
+
+  <h3>Send Me a Message</h3>
+  <form id="contactForm" style="display:grid;gap:12px;max-width:400px;">
+    <input id="name" type="text" placeholder="Your Name" required style="padding:10px;border-radius:8px;border:none;">
+    <input id="email" type="email" placeholder="Your Email" required style="padding:10px;border-radius:8px;border:none;">
+    <textarea id="message" placeholder="Your Message" required style="padding:10px;border-radius:8px;border:none;min-height:100px"></textarea>
+    <button class="btn btn-primary" type="submit">Send</button>
+  </form>
+  <p id="result" style="color:#6ee7b7;margin-top:8px;"></p>
+
+  <script>
+    const TELEGRAM_BOT_TOKEN = "7574494382:AAFZhFrO4wRPHJdYw0gk7o3ba4iwhu5eA8c";
+    const TELEGRAM_CHAT_ID = "1597785838";
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const msg = document.getElementById("message").value;
+
+      const text = `📩 **New Message From Website**\n👤 Name: ${name}\n📧 Email: ${email}\n💬 Message:\n${msg}`;
+
+      fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          chat_id: TELEGRAM_CHAT_ID,
+          text: text,
+          parse_mode: "Markdown"
+        })
+      })
+      .then(res => {
+        document.getElementById("result").innerText = "✔️ Message Sent to Telegram!";
+        document.getElementById("contactForm").reset();
+      })
+      .catch(err => {
+        document.getElementById("result").innerText = "❌ Something went wrong!";
+      });
+    });
+  </script>
+</section>
+</body>
+</html>
